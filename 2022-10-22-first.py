@@ -1,19 +1,4 @@
-List=[]
-List2=[]
-
-def d(n):
-    N=n+(n//1000+((n%1000)//100)+((n%100)//10)+n%10)     
-    List.append(N)
-
-for i in range(1,10000):
-    List2.append(i)
-for i in range(1,10000):
-    d(i)
-
-SetList = set(List)
-SetList2 = set(List2)
-List3=list(SetList2-SetList)
-List3.sort()
-
-for i in range(len(List3)):
-    print(List3[i])
+array=[1,1,2,2,2,8]
+array2=list(map(int,array))
+input=list(map(int,input().split()))
+print(int((array2[0]-input[0])), int((array2[1]-input[1])), int((array2[2]-input[2])), int((array2[3]-input[3])), int((array2[4]-input[4])), int(array2[5]-input[5]))

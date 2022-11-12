@@ -1,16 +1,6 @@
-A, B = [], []
-
-N, M = map(int, input().split())
-
-for row in range(N):
-    row = list(map(int, input().split()))
-    A.append(row)
-
-for row in range(N):
-    row = list(map(int, input().split()))
-    B.append(row)
-    
-for row in range(N):
-    for col in range(M):
-        print(A[row][col] + B[row][col], end=' ')
-    print()
+a=int(input())
+b=int(input())
+print(a*(b%10))
+print(a*(int((b%100)/10)))
+print(a*(int((b/100))))
+print(a*b)

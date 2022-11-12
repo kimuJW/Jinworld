@@ -1,10 +1,10 @@
-N=int(input())
-for i in range(N):
-    list=[]
-    a,b=map(str,input().split())
-    for i in range(len(b)):
-        for c in range(int(a)):
-            list.append(b[i])
-    for d in range(len(list)):
-        print(list[d],end='')
-    print("")   
+x=int(input())
+n=int(input())
+L=[]
+for i in range(n):
+    a,b=map(int,input().split())
+    L.append(a*b)
+if sum(L)==x:
+    print("Yes")
+else:
+    print("No")

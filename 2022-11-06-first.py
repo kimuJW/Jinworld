@@ -1,4 +1,5 @@
-S=input()
-i=0
-for i in range(26):
-    print(S.find(chr(ord('a')+i)),end=' ')
+n=int(input())
+a=[]
+for i in range(1,n+1,1):
+    a.append(i)
+print(sum(a))

@@ -1,6 +1,2 @@
-try:
-    while True:    
-        A,B=map(int,input().split())
-        print(A+B)
-except:
-    exit()
+a,b=map(int,input().split())
+print(a*b)

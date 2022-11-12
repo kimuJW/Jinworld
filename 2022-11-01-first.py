@@ -1,14 +1,9 @@
-T=int(input())
-count=0
-for i in range(T):
-    H,W,N = map(int,input().split())
-    while True:
-        count+=H       
-        if count>=N:
-            if N%H!=0:    
-                print(101+((N%H-1)*100)+int(N/H))
-                count=0
-                break
-            elif N%H==0:
-                print(101+((H-1)*100)+int(N/H)-1)
-                break
+a,b= map(int,input().split())
+if a!=0 and b>=45:   
+    print(a,b-45)
+elif a!=0 and b<45:
+    print(a-1,60+(b-45))
+elif a==0 and b<45:
+    print(23,60+(b-45))
+else:
+    print(a,b-45)
